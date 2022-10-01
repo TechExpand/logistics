@@ -14,7 +14,6 @@ app.use(cookieParser());
 
 
 const mongoose = require('mongoose');
-// const uri = "mongodb+srv://ediku126:ediku126@cluster0.flaukda.mongodb.net/?retryWrites=true&w=majority";
 const uri = "mongodb+srv://ediku126:ediku126@cluster0.owidpql.mongodb.net/?retryWrites=true&w=majority";
 
 // mongosh "mongodb+srv://cluster0.flaukda.mongodb.net/myFirstDatabase" --apiVersion 1 --username ediku126
