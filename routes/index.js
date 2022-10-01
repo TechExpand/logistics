@@ -8,7 +8,7 @@ const Shiping = require("../models/shiping")
 
 
 // index page
-router.get('/index', function (req, res) {
+router.get('/', function (req, res) {
     res.render('pages/index');
 });
 
