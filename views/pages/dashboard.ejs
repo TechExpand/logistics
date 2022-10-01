@@ -237,19 +237,19 @@
                       
                         <td data-label="Status">
                     
-                            <span class="badge base--bg"><a href="/edit-quote" id="edit"><%= transaction[i].status %></a></span>
+                            <span class="badge base--bg"><a href="/edit-quote/<%=transaction[i]._id%>/<%=transaction[i].shipingID%>/<%=transaction[i].status%>/<%=transaction[i].packageType%>/<%=transaction[i].weight%>/<%=transaction[i].pickup%>/<%=transaction[i].dropoff%>/<%=transaction[i].email%>/<%=transaction[i].amount%>" id="edit"><%= transaction[i].status %></a></span>
                            
                         </td>
 
-                        <td data-label="Package Type"><a href="/edit-quote"><%= transaction[i].packageType.toString() %></a></td>
-						<td data-label="Weight"><a href="/edit-quote"><%= transaction[i].weight.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") %></a></td>
-						<td data-label="Pickup"><a href="/edit-quote"><%= transaction[i].pickup.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") %></a></td>
-						<td data-label="Dropoff"><a href="/edit-quote"><%= transaction[i].dropoff.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") %></a></td>
+                        <td data-label="Package Type"><a href="/edit-quote/<%=transaction[i]._id%>/<%=transaction[i].shipingID%>/<%=transaction[i].status%>/<%=transaction[i].packageType%>/<%=transaction[i].weight%>/<%=transaction[i].pickup%>/<%=transaction[i].dropoff%>/<%=transaction[i].email%>/<%=transaction[i].amount%>"><%= transaction[i].packageType.toString() %></a></td>
+						<td data-label="Weight"><a href="/edit-quote/<%=transaction[i]._id%>/<%=transaction[i].shipingID%>/<%=transaction[i].status%>/<%=transaction[i].packageType%>/<%=transaction[i].weight%>/<%=transaction[i].pickup%>/<%=transaction[i].dropoff%>/<%=transaction[i].email%>/<%=transaction[i].amount%>"><%= transaction[i].weight.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") %></a></td>
+						<td data-label="Pickup"><a href="/edit-quote/<%=transaction[i]._id%>/<%=transaction[i].shipingID%>/<%=transaction[i].status%>/<%=transaction[i].packageType%>/<%=transaction[i].weight%>/<%=transaction[i].pickup%>/<%=transaction[i].dropoff%>/<%=transaction[i].email%>/<%=transaction[i].amount%>"><%= transaction[i].pickup.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") %></a></td>
+						<td data-label="Dropoff"><a href="/edit-quote/<%=transaction[i]._id%>/<%=transaction[i].shipingID%>/<%=transaction[i].status%>/<%=transaction[i].packageType%>/<%=transaction[i].weight%>/<%=transaction[i].pickup%>/<%=transaction[i].dropoff%>/<%=transaction[i].email%>/<%=transaction[i].amount%>"><%= transaction[i].dropoff.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") %></a></td>
 						
-						<td data-label="Email"><a href="/edit-quote"> <%= transaction[i].email.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") %></a></td>
+						<td data-label="Email"><a href="/edit-quote/<%=transaction[i]._id%>/<%=transaction[i].shipingID%>/<%=transaction[i].status%>/<%=transaction[i].packageType%>/<%=transaction[i].weight%>/<%=transaction[i].pickup%>/<%=transaction[i].dropoff%>/<%=transaction[i].email%>/<%=transaction[i].amount%>"> <%= transaction[i].email.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") %></a></td>
 
 						<td data-label="Cost">
-							<span class="text-success"><a href="/edit-quote"> $<%= transaction[i].amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") %></a></span>
+							<span class="text-success"><a href="/edit-quote/<%=transaction[i]._id%>/<%=transaction[i].shipingID%>/<%=transaction[i].status%>/<%=transaction[i].packageType%>/<%=transaction[i].weight%>/<%=transaction[i].pickup%>/<%=transaction[i].dropoff%>/<%=transaction[i].email%>/<%=transaction[i].amount%>"> $<%= transaction[i].amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") %></a></span>
                           </td>
                       
                       </tr>
