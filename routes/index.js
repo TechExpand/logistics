@@ -96,7 +96,10 @@ router.get('/service', function (req, res) {
 
 
 // index page
-router.get('/edit-quote/:id/:shipingID/:status/:packageType/:weight/:pickup/:dropoff/:email/:amount', function (req, res) {
+router.get('/edit-quote/:id/:shipingID/:status/:packageType/:weight/:pickup/:dropoff/:email/:amount/:phone', function (req, res) {
+   if(req.params.phone == ""){
+    req.params.phone = "0";
+   }
     res.render('pages/edit-quote', {
         message: "null",
         id: req.params.id,
@@ -107,6 +110,7 @@ router.get('/edit-quote/:id/:shipingID/:status/:packageType/:weight/:pickup/:dro
         pickup: req.params.pickup,
         dropoff: req.params.dropoff,
         email: req.params.email,
+        phone: req.params.phone,
         amount: req.params.amount
     });
 });
