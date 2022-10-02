@@ -156,38 +156,7 @@ function gMap () {
 	};
 }
 // 8. contact form validation
-function contactFormValidation () {
 
-	if($('.contact-form').length){
-		$('.contact-form').validate({ // initialize the plugin
-			rules: {
-				name: {
-					required: true
-				},
-				email: {
-					required: true,
-					email: true
-				},
-				message: {
-					required: true
-				},
-				subject: {
-					required: true
-				}
-			},
-			submitHandler: function (form) { 
-				// sending value with ajax request
-				$.post($(form).attr('action'), $(form).serialize(), function (response) {
-					$(form).parent('div').append(response);
-					$(form).find('input[type="text"]').val('');
-					$(form).find('input[type="email"]').val('');
-					$(form).find('textarea').val('');
-				});
-				return false;
-			}
-		});
-	}
-}
 // 9. sticky header
 function stickyHeader () {
 	if ($('.stricky').length) {

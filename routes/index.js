@@ -1,7 +1,7 @@
 const express = require('express');
-
 const router = express.Router();
-const { json } = require("body-parser");
+
+
 const mongoose = require('mongoose');
 const Shiping = require("../models/shiping")
 
@@ -129,19 +129,19 @@ router.post('/editqoute/:id', function (req, res) {
 
 
 
-router.post('/track', function (req, res) {
+router.post('/track', function (req, res, next) {
     Shiping.find({shipingID: req.body.shipingID }).then(function(shiping){
         if(shiping.length === 0){
-            res.render('pages/track-shipment', {
+        return    res.render('pages/track-shipment', {
                 message: "No tracking number found",
             });
         }else{
-            res.render('pages/trackfind', {
+        return    res.render('pages/trackfind', {
                 transaction: shiping,
             });
         }
       
-    })
+    }).catch(next);
 });
 
 
