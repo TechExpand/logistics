@@ -335,7 +335,7 @@ span {
 }
 
 .base--color {
-    color: #cca354 !important;
+    color: #13314C !important;
 }
 
 .p--color {
@@ -889,8 +889,8 @@ span {
     left: 0;
     width: 20px;
     height: 10px;
-    border-left: 1px solid #cca354;
-    border-bottom: 1px solid #cca354;
+    border-left: 1px solid #13314C;
+    border-bottom: 1px solid #13314C;
     -webkit-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
@@ -2936,7 +2936,7 @@ span.is-active:after {
 /* package section css start */
 .package-card {
     padding: 30px;
-    border: 3px solid #cca354;
+    border: 3px solid #13314C;
     background-color: #ffffff;
     border-radius: 8px;
     -webkit-border-radius: 8px;
@@ -2944,14 +2944,14 @@ span.is-active:after {
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
     height: 100%;
-    box-shadow: 0 0 15px rgba(204, 163, 84, 0.5);
+    box-shadow: 0 0 15px rgba(37, 36, 35, 0.5);
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
 }
 
 .package-card:hover {
-    box-shadow: 0 5px 15px rgba(204, 163, 84, 0.5);
+    box-shadow: 0 5px 15px  rgba(37, 36, 35, 0.5);
     -webkit-transform: translateY(-5px);
     -ms-transform: translateY(-5px);
     transform: translateY(-5px);
@@ -2963,7 +2963,7 @@ span.is-active:after {
 
 .package-card__features li {
     padding: 10px 0;
-    border-bottom: 1px solid rgba(204, 163, 84, 0.35);
+    border-bottom: 1px solidrgba(37, 36, 35, 0.5);
 }
 
 .package-card__range {
@@ -3015,7 +3015,7 @@ span.is-active:after {
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     background-color: #ffffff;
-    box-shadow: 0 0 15px rgba(204, 163, 84, 0.5);
+    box-shadow: 0 0 15px rgba(37, 36, 35, 0.5);
 }
 
 @media (max-width: 575px) {
@@ -3042,7 +3042,7 @@ span.is-active:after {
     top: 55px;
     width: 450px;
     height: 2px;
-    border-top: 1px dashed #cca354;
+    border-top: 1px dashed #13314C;
     z-index: -1;
 }
 
@@ -3066,8 +3066,8 @@ span.is-active:after {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    border: 3px solid #cca354;
-    box-shadow: 0 0 15px 3px rgba(204, 163, 84, 0.65);
+    border: 3px solid #13314C;
+    box-shadow: 0 0 15px 3px rgba(37, 36, 35, 0.5);
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -3087,7 +3087,7 @@ span.is-active:after {
     justify-content: center;
     align-items: center;
     font-size: 13px;
-    border: 2px solid #cca354;
+    border: 2px solid #13314C;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -3107,13 +3107,13 @@ span.is-active:after {
 /* how work section css end */
 /* testimonial section css start */
 .testimonial-card {
-    background-color: rgba(204, 163, 84, 0.65);
+    background-color: rgba(37, 36, 35, 0.5);
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
-    box-shadow: 0 5px 0px #cca354;
+    box-shadow: 0 5px 0px #13314C;
 }
 
 .testimonial-card__content {
@@ -3130,7 +3130,7 @@ span.is-active:after {
     width: 75px;
     height: 75px;
     overflow: hidden;
-    border: 3px solid #cca354;
+    border: 3px solid #13314C;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -3675,17 +3675,20 @@ blockquote {
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+    color: black !important;
     overflow: hidden;
-    box-shadow: 0 0 10px 2px rgba(204, 163, 84, 0.45);
+    box-shadow: 0 0 10px 2px rgba(36, 36, 36, 0.45);
 }
 
 .account-card__header {
+    color: black !important;
     padding: 50px 30px;
-    border-bottom: 2px solid rgba(204, 163, 84, 0.5);
+    border-bottom: 2px solid rgba(36, 36, 36, 0.45);
 }
 
 .account-card__body {
     padding: 30px;
+    color: black !important;
 }
 
 /* account section css end */
@@ -3693,11 +3696,12 @@ blockquote {
 .contact-wrapper {
     overflow: hidden;
     background-color: #ffffff;
-    box-shadow: 0 5px 15px rgba(204, 163, 84, 0.4);
+    box-shadow: 0 5px 15px rgba(36, 36, 36, 0.45);
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
+    color: black !important;
     -o-border-radius: 5px;
 }
 
@@ -3891,21 +3895,21 @@ blockquote {
 
 @-webkit-keyframes colorSplit {
     25% {
-        text-shadow: -0.02em 0 0 #cca354, 0.025em 0 0 #8f6d2b;
+        text-shadow: -0.02em 0 0 #13314C, 0.025em 0 0 #8f6d2b;
     }
 
     75% {
-        text-shadow: -0.035em 0 0 #cca354, 0.04em 0 0 #8f6d2b;
+        text-shadow: -0.035em 0 0 #13314C, 0.04em 0 0 #8f6d2b;
     }
 }
 
 @keyframes colorSplit {
     25% {
-        text-shadow: -0.02em 0 0 #cca354, 0.025em 0 0 #8f6d2b;
+        text-shadow: -0.02em 0 0 #13314C, 0.025em 0 0 #8f6d2b;
     }
 
     75% {
-        text-shadow: -0.035em 0 0 #cca354, 0.04em 0 0 #8f6d2b;
+        text-shadow: -0.035em 0 0 #13314C, 0.04em 0 0 #8f6d2b;
     }
 }
 
