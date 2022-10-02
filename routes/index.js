@@ -260,6 +260,7 @@ router.post('/request-qoute', function (req, res) {
         shipingID: makeid(12).toString().toUpperCase(),
         status: "pending",
         packageType: req.body.packageType,
+        phone: req.body.phone,
         pickup: req.body.pickup,
         dropoff: req.body.dropoff,
         weight: req.body.weight,

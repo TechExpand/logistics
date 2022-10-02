@@ -11,6 +11,7 @@ const ShipingSchema = new Schema({
     pickup: String,
 	dropoff: String,
 	weight: String,
+  phone: String,
 	email: String,
 	amount: String,
   });
