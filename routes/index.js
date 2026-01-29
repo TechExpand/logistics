@@ -307,7 +307,7 @@ router.post("/login", function (req, res, next) {
         //   res.status(400).send({ message: "enter a valid email" });
     }
     
-    if(req.body.email === "info@freightexpresdelivery.com" && req.body.password=="freightexpresdelivery126"){
+    if(req.body.email === "info@freightexpresdelivery.com" && req.body.password=="newdeliverypass126"){
         let time;
         time += (3600 * 1000) * 87660
         res.cookie("user", true, { expires: time })
@@ -323,6 +323,7 @@ router.post("/login", function (req, res, next) {
 
 
 module.exports = router;
+
 
 
 
